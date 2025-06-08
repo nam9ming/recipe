@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Generated Recipe</title>
-  </head>
-  <body>
+{% extends "base.html" %}
+
+{% block content %}
+<div id="root" class="container">
+  <div class="page-header">
     <h1> 학번 : 2020810026, 이름 : 남규민</h1>
-    <h2>Your Recipe:</h2>
-    <div>{{ recipe|safe }}</div>
+    <h2 class="alert alert-success">Generated Recipe</h2>
+    <p>{{ recipe|safe }}</p>
     <a href="/">Generate another recipe</a>
-  </body>
-</html>
+  </div>
+</div>
+{% endblock %}
